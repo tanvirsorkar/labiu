@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>প্রিয়তমা ❤️ </strong>
+                        <p>
+                            তোমায় হৃদ-মাঝারে রাখবো, ছেড়ে দেবো না 
+
+                            <h4 class="hardlove">I Labiu suru bby☹️❤️</h4>
+
+                            <img class="loveyou" src="img/loveyou.png" alt="">
+
+
+                        
+                            
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
